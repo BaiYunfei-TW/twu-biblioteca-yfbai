@@ -344,7 +344,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainMenuTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
+    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
+      <module name="biblioteca" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -440,29 +451,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ReturnMenuTest.should_return_error_message_when_the_book_name_has_not_been_checked_out" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.menu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.menu" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.menu.ReturnMenuTest" />
-      <option name="METHOD_NAME" value="should_return_error_message_when_the_book_name_has_not_been_checked_out" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -502,19 +490,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReturnMenuTest.should_return_error_message_when_the_book_name_has_not_been_checked_out" />
       <item itemvalue="JUnit.ReturnMenuTest.should_print_error_message_when_the_book_is_not_in_repository" />
       <item itemvalue="JUnit.ReturnMenuTest" />
       <item itemvalue="JUnit.MainMenuTest.should_enter_Return_menu_and_return_the_book_named_Design_Patterns_when_given_3_and_Design_Pattern" />
       <item itemvalue="JUnit.MainMenuTest" />
+      <item itemvalue="Application.BibliotecaApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.MainMenuTest" />
         <item itemvalue="JUnit.MainMenuTest.should_enter_Return_menu_and_return_the_book_named_Design_Patterns_when_given_3_and_Design_Pattern" />
         <item itemvalue="JUnit.ReturnMenuTest" />
         <item itemvalue="JUnit.ReturnMenuTest.should_print_error_message_when_the_book_is_not_in_repository" />
-        <item itemvalue="JUnit.ReturnMenuTest.should_return_error_message_when_the_book_name_has_not_been_checked_out" />
       </list>
     </recent_temporary>
   </component>
