@@ -29,6 +29,9 @@ public class MainMenu implements Menu {
                 case 1:
                     new ListBookMenu().enter();
                     enter();
+                case 2:
+                    new CheckOutMenu(inputCommand).enter();
+                    enter();
             }
         } catch (IOException e) {
             e.printStackTrace();

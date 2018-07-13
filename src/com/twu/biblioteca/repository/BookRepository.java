@@ -22,11 +22,17 @@ public class BookRepository {
                 new Book(3, "Design Patterns", "Erich Gamma", 2001, Book.STATE_CHECKED_OUT));
     }
 
+    public void init() {
+        this.bookList = Arrays.asList(new Book(1,"Head First Java", "Bert Bates, Kathy Sierra", 2005, Book.STATE_IN_LIBRARY),
+                new Book(2, "Thinking in Java", "Bruce Eckel", 2006, Book.STATE_IN_LIBRARY),
+                new Book(3, "Design Patterns", "Erich Gamma", 2001, Book.STATE_CHECKED_OUT));
+    }
+
     /**
      * Return books which could be checked out
      * @return
      */
-    public List<Book> getCheckoutableBooks() {
+    public List<Book> getCheckableBooks() {
         List<Book> checkableBooks = new ArrayList<>();
         for (Book book :
                 bookList) {
@@ -39,5 +45,14 @@ public class BookRepository {
 
     public static BookRepository instance() {
         return bookRepository;
+    }
+
+    public Book queryByName(String name) {
+        for (Book book : bookList) {
+            if (book.getName().equals(name)) {
+                return book;
+            }
+        }
+        return null;
     }
 }

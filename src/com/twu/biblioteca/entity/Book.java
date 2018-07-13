@@ -21,6 +21,10 @@ public class Book {
         this.state = state;
     }
 
+    public Book(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Book)) {
@@ -43,5 +47,9 @@ public class Book {
 
     public void checkout() {
         this.state = STATE_CHECKED_OUT;
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

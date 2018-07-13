@@ -9,7 +9,7 @@ public class ListBookMenu implements Menu {
         System.out.println("Book List:");
         System.out.println("----------------------------");
         for (Book book :
-                BookRepository.instance().getCheckoutableBooks()) {
+                BookRepository.instance().getCheckableBooks()) {
             System.out.println(book.toString());
         }
         System.out.println("----------------------------");

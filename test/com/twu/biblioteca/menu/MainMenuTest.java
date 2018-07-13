@@ -56,4 +56,29 @@ public class MainMenuTest extends BaseTest {
         assertEquals(excepted, printedContent());
     }
 
+    @Test
+    public void should_enter_Checkout_menu_and_checkout_book_and_then_quit_when_given_2_and_Head_First_Java_and_then_0() throws IOException {
+        String excepted =   "1. List Books\r\n" +
+                "2. Checkout Books\r\n" +
+                "3. Return Books\r\n" +
+                "0. Quit\r\n" +
+                "----------------------------\r\n" +
+                "Successfully checked out!\r\n" +
+                "----------------------------\r\n" +
+                "1. List Books\r\n" +
+                "2. Checkout Books\r\n" +
+                "3. Return Books\r\n" +
+                "0. Quit\r\n" +
+                "----------------------------\r\n" +
+                "Bye\r\n";
+
+        InputCommand inputCommand = mock(InputCommand.class);
+        when(inputCommand.input(">")).thenReturn("2","0");
+        when(inputCommand.input("Please input the book name:\r\n")).thenReturn("Head First Java");
+        MainMenu mainMenu = new MainMenu(inputCommand);
+        mainMenu.enter();
+
+        assertEquals(excepted, printedContent());
+    }
+
 }
