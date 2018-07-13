@@ -52,4 +52,8 @@ public class Book {
     public String getName() {
         return this.name;
     }
+
+    public void returned() {
+        this.state = STATE_IN_LIBRARY;
+    }
 }

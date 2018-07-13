@@ -81,4 +81,29 @@ public class MainMenuTest extends BaseTest {
         assertEquals(excepted, printedContent());
     }
 
+    @Test
+    public void should_enter_Return_menu_and_return_the_book_named_Design_Patterns_when_given_3_and_Design_Pattern() throws IOException {
+        String excepted =   "1. List Books\r\n" +
+                "2. Checkout Books\r\n" +
+                "3. Return Books\r\n" +
+                "0. Quit\r\n" +
+                "----------------------------\r\n" +
+                "Successfully returned!\r\n" +
+                "----------------------------\r\n" +
+                "1. List Books\r\n" +
+                "2. Checkout Books\r\n" +
+                "3. Return Books\r\n" +
+                "0. Quit\r\n" +
+                "----------------------------\r\n" +
+                "Bye\r\n";
+
+        InputCommand inputCommand = mock(InputCommand.class);
+        when(inputCommand.input(">")).thenReturn("3","0");
+        when(inputCommand.input("Please input the book's name:\r\n")).thenReturn("Design Patterns");
+        MainMenu mainMenu = new MainMenu(inputCommand);
+        mainMenu.enter();
+
+        assertEquals(excepted, printedContent());
+    }
+
 }

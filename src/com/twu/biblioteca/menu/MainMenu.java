@@ -23,16 +23,20 @@ public class MainMenu implements Menu {
             String option = inputCommand.input(">");
             int optionNumber = Integer.parseInt(option);
             switch (optionNumber) {
-                case 0:
-                    System.out.println("Bye");
-                    return;
                 case 1:
                     new ListBookMenu().enter();
-                    enter();
+                    break;
                 case 2:
                     new CheckOutMenu(inputCommand).enter();
-                    enter();
+                    break;
+                case 3:
+                    new ReturnMenu(inputCommand).enter();
+                    break;
+                case 0:
+                    System.out.println("Bye");
+                    return; //quit the program
             }
+            enter();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -45,4 +45,14 @@ public class BookTest {
         assertEquals(excepted, book.toString());
     }
 
+    @Test
+    public void should_checkable_return_true_when_a_book_was_returned() {
+        boolean excepted = true;
+
+        Book book = new Book(1, "Head First Java", "Bert Bates, Kathy Sierra", 2005, Book.STATE_CHECKED_OUT);
+        book.returned();
+
+        assertEquals(excepted, book.checkable());
+    }
+
 }
