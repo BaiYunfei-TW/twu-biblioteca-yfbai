@@ -2,6 +2,7 @@ package com.twu.biblioteca;
 
 import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.repository.BookRepository;
+import com.twu.biblioteca.repository.UserRepository;
 import org.junit.Before;
 
 import java.io.ByteArrayOutputStream;
@@ -18,6 +19,7 @@ public class BaseTest {
         System.setOut(new PrintStream(outContent));
 
         BookRepository.instance().init();
+        UserRepository.instance().init();
     }
 
     public String printedContent() {

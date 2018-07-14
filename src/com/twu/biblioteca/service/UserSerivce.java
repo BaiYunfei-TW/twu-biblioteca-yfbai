@@ -15,7 +15,8 @@ public class UserSerivce {
         if (!actualUser.getPassword().equals(password)) {
             return null;
         }
-
+        //successfully login
+        userRepository.setLoginedUser(actualUser);
         return actualUser;
     }
 

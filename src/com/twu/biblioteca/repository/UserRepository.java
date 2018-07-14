@@ -12,6 +12,8 @@ public class UserRepository {
 
     private final List<User> users = new ArrayList<>();
 
+    private User loginedUser;
+
     static {
         userRepository = new UserRepository();
     }
@@ -25,10 +27,11 @@ public class UserRepository {
                 new User(1, "001-0001", "123456"),
                 new User(2, "001-0002", "111111")
         ));
+        this.loginedUser = null;
     }
 
     public static UserRepository instance() {
-        return new UserRepository();
+        return userRepository;
     }
 
     public User queryByUsername(String username) {
@@ -39,5 +42,13 @@ public class UserRepository {
             }
         }
         return null;
+    }
+
+    public User getLoginedUser() {
+        return this.loginedUser;
+    }
+
+    public void setLoginedUser(User loginedUser) {
+        this.loginedUser = loginedUser;
     }
 }
