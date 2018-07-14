@@ -4,11 +4,23 @@ public class User {
     private final int id;
     private String account;
     private String password;
+    private String name;
+    private String email;
+    private String tel;
 
     public User(int id, String account, String password) {
         this.id = id;
         this.account = account;
         this.password = password;
+    }
+
+    public User(int id, String account, String password, String name, String email, String tel) {
+        this.id = id;
+        this.account = account;
+        this.password = password;
+        this.name = name;
+        this.email = email;
+        this.tel = tel;
     }
 
     public String getAccount() {
@@ -28,5 +40,20 @@ public class User {
 
     public String getPassword() {
         return this.password;
+    }
+
+    public String getInfo() {
+        return String.format(
+                "Id: %d\r\n" +
+                "Account: %s\r\n" +
+                "Name: %s\r\n" +
+                "Email: %s\r\n" +
+                "Tel: %s\r\n" ,
+                id,
+                account,
+                name,
+                email,
+                tel
+        );
     }
 }
