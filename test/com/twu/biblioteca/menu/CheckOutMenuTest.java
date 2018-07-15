@@ -30,7 +30,7 @@ public class CheckOutMenuTest extends BaseTest {
 
         InputCommand inputCommand = mock(InputCommand.class);
 
-        when(inputCommand.input("Please input the book name:\r\n")).thenReturn("Head First Java");
+        when(inputCommand.input("Please input the Book&Movie's name:\r\n")).thenReturn("Head First Java");
         when(inputCommand.input("Account:\r\n")).thenReturn("001-0001");
         when(inputCommand.input("Password:\r\n")).thenReturn("123456");
 
@@ -51,7 +51,7 @@ public class CheckOutMenuTest extends BaseTest {
         book.checkout();
 
         InputCommand inputCommand = mock(InputCommand.class);
-        when(inputCommand.input("Please input the book name:\r\n")).thenReturn("Head First Java");
+        when(inputCommand.input("Please input the Book&Movie's name:\r\n")).thenReturn("Head First Java");
 
         new CheckOutMenu(inputCommand).enter();
 
@@ -67,7 +67,7 @@ public class CheckOutMenuTest extends BaseTest {
                             "----------------------------\r\n";
 
         InputCommand inputCommand = mock(InputCommand.class);
-        when(inputCommand.input("Please input the book name:\r\n")).thenReturn("Introduction to Java");
+        when(inputCommand.input("Please input the Book&Movie's name:\r\n")).thenReturn("Introduction to Java");
 
         new CheckOutMenu(inputCommand).enter();
 
