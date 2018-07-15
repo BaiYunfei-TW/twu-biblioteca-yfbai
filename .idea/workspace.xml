@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2635f1-ed81-4922-9054-11e91bea1acd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,14 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckoutRecordMenuTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CheckoutRecordMenuTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="32">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -64,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckoutRecordTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckoutRecordTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="224">
+              <caret line="14" column="158" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="158" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,8 +211,8 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckOutMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" />
       </list>
     </option>
   </component>
@@ -376,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutRecordTest">
+  <component name="RunManager" selected="JUnit.CheckoutRecordMenuTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -542,8 +536,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckoutRecordTest" />
         <item itemvalue="JUnit.CheckoutRecordMenuTest" />
+        <item itemvalue="JUnit.CheckoutRecordTest" />
         <item itemvalue="JUnit.CheckOutMenuTest" />
         <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_failure_given_item_which_is_checked_out" />
         <item itemvalue="JUnit.CheckoutServiceTest" />
@@ -567,12 +561,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckoutServiceTest - 2018.07.15 at 10h 33m 12s.xml">
-      <configuration name="CheckoutServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutServiceTest - 2018.07.15 at 10h 34m 19s.xml">
-      <configuration name="CheckoutServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CheckoutServiceTest_should_checkout_failure_given_item_which_is_checked_out - 2018.07.15 at 10h 34m 54s.xml">
       <configuration name="CheckoutServiceTest.should_checkout_failure_given_item_which_is_checked_out" configurationId="JUnit" />
     </history-entry>
@@ -597,9 +585,15 @@
     <history-entry file="CheckoutRecordTest - 2018.07.15 at 10h 53m 56s.xml">
       <configuration name="CheckoutRecordTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CheckoutRecordMenuTest - 2018.07.15 at 10h 55m 20s.xml">
+      <configuration name="CheckoutRecordMenuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckoutRecordMenuTest - 2018.07.15 at 10h 55m 55s.xml">
+      <configuration name="CheckoutRecordMenuTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39567000" />
+    <option name="totallyTimeSpent" value="39688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -1200,16 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1224,11 +1208,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="224">
+          <caret line="14" column="158" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="158" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>
