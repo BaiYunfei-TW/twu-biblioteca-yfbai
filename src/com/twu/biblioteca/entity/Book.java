@@ -51,11 +51,22 @@ public class Book implements Checkable{
         this.state = STATE_CHECKED_OUT;
     }
 
+    @Override
+    public String name() {
+        return this.name;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return this.name;
     }
 
-    public void returned() {
+    @Override
+    public void returnToLibrary() {
         this.state = STATE_IN_LIBRARY;
     }
 

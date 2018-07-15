@@ -22,7 +22,8 @@ public class UserInfoMenuTest extends BaseTest {
                             "Account: 001-0001\r\n" +
                             "Name: yfbai\r\n" +
                             "Email: baiyunfeiii@foxmail.com\r\n" +
-                            "Tel: 15626299517\r\n";
+                            "Tel: 15626299517\r\n" +
+                            "----------------------------\r\n";
 
         assertEquals(excepted, printedContent());
     }
@@ -32,7 +33,8 @@ public class UserInfoMenuTest extends BaseTest {
         UserInfoMenu userInfoMenu = new UserInfoMenu();
         userInfoMenu.enter();
 
-        String excepted =   "Sorry. You haven't login yet.\r\n";
+        String excepted =   "Sorry. You haven't login yet.\r\n" +
+                "----------------------------\r\n";
 
         assertEquals(excepted, printedContent());
     }

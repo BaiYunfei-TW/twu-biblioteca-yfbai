@@ -169,7 +169,7 @@ public class MainMenuTest extends BaseTest {
                 "7. My Information\r\n" +
                 "0. Quit\r\n" +
                 "----------------------------\r\n" +
-                "Successfully returned!\r\n" +
+                "Successfully returnToLibrary!\r\n" +
                 "----------------------------\r\n" +
                 "1. List Books\r\n" +
                 "2. List Movies\r\n" +

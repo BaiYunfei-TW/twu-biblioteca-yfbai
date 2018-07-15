@@ -21,7 +21,7 @@ public class ReturnMenuTest extends BaseTest {
         String excepted =   "Please login:\r\n" +
                             "Successfully login!\r\n" +
                             "----------------------------\r\n" +
-                            "Successfully returned!\r\n" +
+                            "Successfully returnToLibrary!\r\n" +
                             "----------------------------\r\n";
 
         Book book = BookRepository.instance().queryByName("Design Patterns");

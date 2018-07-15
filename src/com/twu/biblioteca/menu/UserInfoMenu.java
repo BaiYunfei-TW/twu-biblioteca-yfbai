@@ -12,9 +12,11 @@ public class UserInfoMenu implements Menu {
         User user = userRepository.getLoginedUser();
         if (user == null) {
             System.out.println("Sorry. You haven't login yet.");
+            System.out.println("----------------------------");
             return 0;
         }
         System.out.print(user.getInfo());
+        System.out.println("----------------------------");
         return 0;
     }
 

@@ -35,7 +35,18 @@ public class Movie implements Checkable {
         this.state = STATE_CHECKED_OUT;
     }
 
-    public void returned() {
+    @Override
+    public String name() {
+        return this.name;
+    }
+
+    @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public void returnToLibrary() {
         this.state = STATE_IN_LIBRARY;
     }
 

@@ -16,7 +16,7 @@ public class CheckoutRecord {
 
     private String state;
 
-    public static final String STATE_RETURNED = "returned";
+    public static final String STATE_RETURNED = "returnToLibrary";
     public static final String STATE_CHECKOUT = "checkout";
 
     public CheckoutRecord(Checkable item, User user) {
@@ -75,7 +75,8 @@ public class CheckoutRecord {
         return STATE_RETURNED.equals(this.state);
     }
 
-    public void returned() {
+    public void returnToLibrary() {
+        this.returnTime = new Date();
         this.state = STATE_RETURNED;
     }
 
@@ -89,5 +90,17 @@ public class CheckoutRecord {
 
     public int getId() {
         return id;
+    }
+
+    public Date getReturnTime() {
+        return this.returnTime;
+    }
+
+    public Checkable getItem() {
+        return item;
+    }
+
+    public User getUser() {
+        return user;
     }
 }

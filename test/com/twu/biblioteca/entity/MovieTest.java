@@ -51,7 +51,7 @@ public class MovieTest {
         boolean excepted = true;
 
         Movie movie = new Movie(1, "Superman", 2005, "Henry", "9.1", Movie.STATE_CHECKED_OUT);
-        movie.returned();
+        movie.returnToLibrary();
 
         assertEquals(excepted, movie.checkable());
     }

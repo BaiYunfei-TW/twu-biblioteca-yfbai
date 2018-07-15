@@ -39,8 +39,8 @@ public class ReturnMenu implements Menu{
                 System.out.println("----------------------------");
                 return 0;
             }
-            book.returned();
-            System.out.println("Successfully returned!");
+            book.returnToLibrary();
+            System.out.println("Successfully returnToLibrary!");
             System.out.println("----------------------------");
         } catch (IOException e) {
             e.printStackTrace();

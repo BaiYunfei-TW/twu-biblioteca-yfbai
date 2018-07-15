@@ -9,4 +9,10 @@ public interface Checkable {
     boolean checkable();
 
     void checkout();
+
+    String name();
+
+    int getId();
+
+    void returnToLibrary();
 }

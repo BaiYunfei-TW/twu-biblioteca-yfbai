@@ -50,7 +50,7 @@ public class BookTest {
         boolean excepted = true;
 
         Book book = new Book(1, "Head First Java", "Bert Bates, Kathy Sierra", 2005, Book.STATE_CHECKED_OUT);
-        book.returned();
+        book.returnToLibrary();
 
         assertEquals(excepted, book.checkable());
     }

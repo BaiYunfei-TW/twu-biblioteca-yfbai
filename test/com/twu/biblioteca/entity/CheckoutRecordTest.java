@@ -58,7 +58,7 @@ public class CheckoutRecordTest extends BaseTest {
         User user = new User(1, "001-0001", "123456", "yfbai", "baiyunfeiii@foxmail.com", "15626299517");
 
         CheckoutRecord record = new CheckoutRecord(movie, user);
-        record.returned();
+        record.returnToLibrary();
 
         assertEquals(excepted, record.isReturned());
 
