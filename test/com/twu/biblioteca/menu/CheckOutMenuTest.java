@@ -62,7 +62,7 @@ public class CheckOutMenuTest extends BaseTest {
     @Test
     public void should_check_out_the_book_when_given_a_book_name_which_is_not_in_repository() throws IOException {
         login();
-        
+
         String excepted =   "Sorry! \"Introduction to Java\" is not in our library!\r\n" +
                             "----------------------------\r\n";
 

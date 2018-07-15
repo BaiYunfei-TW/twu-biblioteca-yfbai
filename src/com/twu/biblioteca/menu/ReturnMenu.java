@@ -3,6 +3,7 @@ package com.twu.biblioteca.menu;
 import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.entity.Book;
 import com.twu.biblioteca.repository.BookRepository;
+import com.twu.biblioteca.repository.UserRepository;
 
 import java.io.IOException;
 
@@ -17,6 +18,14 @@ public class ReturnMenu implements Menu{
     @Override
     public int enter() {
         try {
+            if (!UserRepository.instance().isLogin()) {
+                System.out.println("Please login:");
+                int status = new LoginMenu(inputCommand).enter();
+                if (status == LoginMenu.LOGIN_FAILURE) {
+                    return 0;
+                }
+            }
+
             String bookname = inputCommand.input("Please input the book's name:\r\n");
             Book book = BookRepository.instance().queryByName(bookname);
             if(book == null){

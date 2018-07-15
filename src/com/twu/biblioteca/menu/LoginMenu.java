@@ -31,11 +31,11 @@ public class LoginMenu implements Menu {
         User user = userSerivce.login(account, password);
         if (user == null) {
             System.out.println("Sorry. Your password or account is incorrect.");
-            return 0;
+            return LOGIN_FAILURE;
         }
         System.out.println("Successfully login!");
         System.out.println("----------------------------");
-        return 0;
+        return LOGIN_SUCCESS;
     }
 
     @Override
