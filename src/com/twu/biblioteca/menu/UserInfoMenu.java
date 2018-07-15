@@ -22,4 +22,9 @@ public class UserInfoMenu implements Menu {
     public String title() {
         return "My Information";
     }
+
+    @Override
+    public boolean auth(User user) {
+        return user != null;
+    }
 }

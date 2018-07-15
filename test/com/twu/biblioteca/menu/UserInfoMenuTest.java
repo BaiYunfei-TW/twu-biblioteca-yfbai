@@ -1,6 +1,7 @@
 package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.BaseTest;
+import com.twu.biblioteca.repository.UserRepository;
 import com.twu.biblioteca.service.UserSerivce;
 import org.junit.Test;
 
@@ -34,5 +35,33 @@ public class UserInfoMenuTest extends BaseTest {
         String excepted =   "Sorry. You haven't login yet.\r\n";
 
         assertEquals(excepted, printedContent());
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_after_login_by_user() {
+        login();
+
+        boolean actual = new UserInfoMenu().auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = true;
+
+        assertEquals(excepted, actual);
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_after_login_by_manager() {
+        loginByManager();
+
+        boolean actual = new UserInfoMenu().auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = true;
+
+        assertEquals(excepted, actual);
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_before_login() {
+        boolean actual = new UserInfoMenu().auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = false;
+
+        assertEquals(excepted, actual);
     }
 }

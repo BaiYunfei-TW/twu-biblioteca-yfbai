@@ -37,6 +37,12 @@ public class BaseTest {
 
     protected void login() {
         UserSerivce userSerivce = new UserSerivce();
+        userSerivce.login("001-0002", "111111");
+    }
+
+    protected void loginByManager() {
+        UserSerivce userSerivce = new UserSerivce();
         userSerivce.login("001-0001", "123456");
     }
+
 }

@@ -1,6 +1,7 @@
 package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.entity.CheckoutRecord;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.CheckoutRecordRepository;
 
 public class CheckoutRecordMenu implements Menu{
@@ -22,5 +23,10 @@ public class CheckoutRecordMenu implements Menu{
     @Override
     public String title() {
         return "Checkout Records";
+    }
+
+    @Override
+    public boolean auth(User user) {
+        return user != null && User.ROLE_MANAGER.equals(user.getRole());
     }
 }

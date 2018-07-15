@@ -2,6 +2,7 @@ package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.BookRepository;
 import com.twu.biblioteca.repository.UserRepository;
 
@@ -50,6 +51,11 @@ public class ReturnMenu implements Menu{
     @Override
     public String title() {
         return "Return";
+    }
+
+    @Override
+    public boolean auth(User user) {
+        return true;
     }
 
 }

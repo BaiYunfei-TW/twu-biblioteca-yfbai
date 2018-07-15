@@ -2,6 +2,7 @@ package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.BookRepository;
 import com.twu.biblioteca.repository.UserRepository;
 import com.twu.biblioteca.serivce.CheckoutService;
@@ -56,5 +57,10 @@ public class CheckOutMenu implements Menu {
     @Override
     public String title() {
         return "Checkout";
+    }
+
+    @Override
+    public boolean auth(User user) {
+        return true;
     }
 }

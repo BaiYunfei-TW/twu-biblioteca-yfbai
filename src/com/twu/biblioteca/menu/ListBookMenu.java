@@ -1,6 +1,7 @@
 package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.entity.Book;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.BookRepository;
 
 public class ListBookMenu implements Menu {
@@ -21,4 +22,8 @@ public class ListBookMenu implements Menu {
         return "List Books";
     }
 
+    @Override
+    public boolean auth(User user) {
+        return true;
+    }
 }

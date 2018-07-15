@@ -24,7 +24,7 @@ public class UserRepository {
 
     public void init() {
         users.addAll(Arrays.asList(
-                new User(1, "001-0001", "123456", "yfbai", "baiyunfeiii@foxmail.com", "15626299517"),
+                new User(1, "001-0001", "123456", "yfbai", "baiyunfeiii@foxmail.com", "15626299517", User.ROLE_MANAGER),
                 new User(2, "001-0002", "111111", "xiaoming", "xiaoming@tw.com", "15626299518")
         ));
         this.loginedUser = null;

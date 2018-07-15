@@ -1,6 +1,7 @@
 package com.twu.biblioteca.menu;
 
 import com.twu.biblioteca.commands.InputCommand;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.UserRepository;
 
 import java.io.IOException;
@@ -71,6 +72,11 @@ public class MainMenu implements Menu {
         return "Main Menu";
     }
 
+    @Override
+    public boolean auth(User user) {
+        return true;
+    }
+
     private class QuitMenu implements Menu {
 
         @Override
@@ -82,6 +88,11 @@ public class MainMenu implements Menu {
         @Override
         public String title() {
             return "Quit";
+        }
+
+        @Override
+        public boolean auth(User user) {
+            return true;
         }
     }
 }

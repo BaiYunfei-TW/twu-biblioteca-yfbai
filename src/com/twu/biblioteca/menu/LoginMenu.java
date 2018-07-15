@@ -42,4 +42,9 @@ public class LoginMenu implements Menu {
     public String title() {
         return "Login";
     }
+
+    @Override
+    public boolean auth(User user) {
+        return user == null;
+    }
 }

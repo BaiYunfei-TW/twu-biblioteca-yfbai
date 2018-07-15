@@ -8,19 +8,30 @@ public class User {
     private String email;
     private String tel;
 
+    private String role;
+
+    public static final String ROLE_MANAGER = "manager";
+    public static final String ROLE_USER = "user";
+
     public User(int id, String account, String password) {
         this.id = id;
         this.account = account;
         this.password = password;
+        this.role = ROLE_USER;
     }
 
     public User(int id, String account, String password, String name, String email, String tel) {
+        this(id, account, password, name, email, tel, ROLE_USER);
+    }
+
+    public User(int id, String account, String password, String name, String email, String tel, String role) {
         this.id = id;
         this.account = account;
         this.password = password;
         this.name = name;
         this.email = email;
         this.tel = tel;
+        this.role = role;
     }
 
     public String getAccount() {
@@ -67,5 +78,9 @@ public class User {
 
     public String getTel() {
         return this.tel;
+    }
+
+    public String getRole() {
+        return role;
     }
 }

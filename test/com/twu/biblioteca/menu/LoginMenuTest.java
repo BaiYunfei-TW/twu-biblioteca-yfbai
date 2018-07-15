@@ -30,7 +30,8 @@ public class LoginMenuTest extends BaseTest {
 
         assertEquals(exceptedUser, loginedUser);
 
-        String exceptedOutput = "Successfully login!\r\n";
+        String exceptedOutput = "Successfully login!\r\n" +
+                "----------------------------\r\n";
         assertEquals(exceptedOutput, printedContent());
     }
 
@@ -50,5 +51,33 @@ public class LoginMenuTest extends BaseTest {
 
         String exceptedOutput = "Sorry. Your password or account is incorrect.\r\n";
         assertEquals(exceptedOutput, printedContent());
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_after_login_by_user() {
+        login();
+
+        boolean actual = new LoginMenu(inputCommand).auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = false;
+
+        assertEquals(excepted, actual);
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_after_login_by_manager() {
+        loginByManager();
+
+        boolean actual = new LoginMenu(inputCommand).auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = false;
+
+        assertEquals(excepted, actual);
+    }
+
+    @Test
+    public void should_return_true_when_require_authorization_before_login() {
+        boolean actual = new LoginMenu(inputCommand).auth(UserRepository.instance().getLoginedUser());
+        boolean excepted = true;
+
+        assertEquals(excepted, actual);
     }
 }
