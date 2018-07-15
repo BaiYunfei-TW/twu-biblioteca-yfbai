@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 
 import static org.junit.Assert.assertEquals;
 
-public class RecordTest extends BaseTest {
+public class CheckoutRecordTest extends BaseTest {
 
     @Test
     public void should_return_record_info_when_checked_out_and_then_returned() {

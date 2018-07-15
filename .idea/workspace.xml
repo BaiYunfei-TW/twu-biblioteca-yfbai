@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2635f1-ed81-4922-9054-11e91bea1acd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckOutMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckOutMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +26,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckOutMenu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckOutMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+            <state relative-caret-position="336">
+              <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckoutRecordMenuTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckoutRecordMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckoutRecordTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,39 +126,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/entity/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-              <folding>
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/entity/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Checkable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/entity/Checkable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckOutMenuTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckOutMenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/entity/Book.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/repository/BookRepository.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/MenuTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/ListBookMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/commands/InputCommand.java" />
@@ -198,7 +203,6 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/ReturnMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/entity/User.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/repository/CheckoutRecordRepository.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/entity/BookTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/repository/CheckoutRecordRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/repository/MovieRepository.java" />
@@ -212,6 +216,9 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/serivce/CheckoutServiceTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckOutMenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java" />
       </list>
     </option>
   </component>
@@ -347,10 +354,10 @@
       <recent name="com.twu.biblioteca" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.twu.biblioteca.menu" />
       <recent name="com.twu.biblioteca.serivce" />
       <recent name="com.twu.biblioteca.repository" />
       <recent name="com.twu.biblioteca.entity" />
-      <recent name="com.twu.biblioteca.menu" />
       <recent name="com.twu.biblioteca.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -369,7 +376,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CheckOutMenuTest">
+  <component name="RunManager" selected="JUnit.CheckoutRecordTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -385,6 +392,52 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.menu" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.menu.CheckOutMenuTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CheckoutRecordMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.menu" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.menu.CheckoutRecordMenuTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CheckoutRecordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.entity.CheckoutRecordTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -442,52 +495,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CheckoutServiceTest.should_checkout_item_given_item_which_is_in_library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.serivce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.serivce" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.serivce.CheckoutServiceTest" />
-      <option name="METHOD_NAME" value="should_checkout_item_given_item_which_is_in_library" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.serivce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.serivce" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.serivce.CheckoutServiceTest" />
-      <option name="METHOD_NAME" value="should_checkout_success_given_item_which_is_in_library" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -528,18 +535,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CheckoutServiceTest" />
-      <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_item_given_item_which_is_in_library" />
-      <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" />
       <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_failure_given_item_which_is_checked_out" />
       <item itemvalue="JUnit.CheckOutMenuTest" />
+      <item itemvalue="JUnit.CheckoutRecordMenuTest" />
+      <item itemvalue="JUnit.CheckoutRecordTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckoutRecordTest" />
+        <item itemvalue="JUnit.CheckoutRecordMenuTest" />
         <item itemvalue="JUnit.CheckOutMenuTest" />
         <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_failure_given_item_which_is_checked_out" />
         <item itemvalue="JUnit.CheckoutServiceTest" />
-        <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" />
-        <item itemvalue="JUnit.CheckoutServiceTest.should_checkout_item_given_item_which_is_in_library" />
       </list>
     </recent_temporary>
   </component>
@@ -560,18 +567,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckoutServiceTest_should_checkout_success_given_item_which_is_in_library - 2018.07.15 at 10h 31m 35s.xml">
-      <configuration name="CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutServiceTest_should_checkout_success_given_item_which_is_in_library - 2018.07.15 at 10h 32m 04s.xml">
-      <configuration name="CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutServiceTest_should_checkout_success_given_item_which_is_in_library - 2018.07.15 at 10h 32m 51s.xml">
-      <configuration name="CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckoutServiceTest_should_checkout_success_given_item_which_is_in_library - 2018.07.15 at 10h 33m 06s.xml">
-      <configuration name="CheckoutServiceTest.should_checkout_success_given_item_which_is_in_library" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CheckoutServiceTest - 2018.07.15 at 10h 33m 12s.xml">
       <configuration name="CheckoutServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -590,9 +585,21 @@
     <history-entry file="CheckOutMenuTest - 2018.07.15 at 10h 38m 25s.xml">
       <configuration name="CheckOutMenuTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CheckOutMenuTest - 2018.07.15 at 10h 41m 25s.xml">
+      <configuration name="CheckOutMenuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckOutMenuTest - 2018.07.15 at 10h 41m 44s.xml">
+      <configuration name="CheckOutMenuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckoutRecordMenuTest - 2018.07.15 at 10h 51m 29s.xml">
+      <configuration name="CheckoutRecordMenuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckoutRecordTest - 2018.07.15 at 10h 53m 56s.xml">
+      <configuration name="CheckoutRecordTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38798000" />
+    <option name="totallyTimeSpent" value="39567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -608,7 +615,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -699,18 +706,11 @@
       <option name="time" value="10" />
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/Menu.java" />
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1033,16 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/RecordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1202,8 +1192,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckOutMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state relative-caret-position="336">
+          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/menu/CheckoutRecordMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" selection-start-line="15" selection-end-line="21" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/menu/CheckoutRecordMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/entity/CheckoutRecordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
