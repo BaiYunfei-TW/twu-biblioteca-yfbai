@@ -15,19 +15,19 @@ public class ReturnMenu implements Menu{
     }
 
     @Override
-    public void enter() {
+    public int enter() {
         try {
             String bookname = inputCommand.input("Please input the book's name:\r\n");
             Book book = BookRepository.instance().queryByName(bookname);
             if(book == null){
                 System.out.println("Sorry! \""+bookname+"\" is not our book!");
                 System.out.println("----------------------------");
-                return;
+                return 0;
             }
             if (book.checkable()) {
                 System.out.println("Sorry! \""+bookname+"\" is already in our library!");
                 System.out.println("----------------------------");
-                return;
+                return 0;
             }
             book.returned();
             System.out.println("Successfully returned!");
@@ -35,6 +35,12 @@ public class ReturnMenu implements Menu{
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return 0;
+    }
+
+    @Override
+    public String title() {
+        return "Return";
     }
 
 }

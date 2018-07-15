@@ -8,12 +8,18 @@ public class UserInfoMenu implements Menu {
     UserRepository userRepository = UserRepository.instance();
 
     @Override
-    public void enter() {
+    public int enter() {
         User user = userRepository.getLoginedUser();
         if (user == null) {
             System.out.println("Sorry. You haven't login yet.");
-            return;
+            return 0;
         }
         System.out.print(user.getInfo());
+        return 0;
+    }
+
+    @Override
+    public String title() {
+        return "My Information";
     }
 }

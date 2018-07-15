@@ -2,6 +2,7 @@ package com.twu.biblioteca.menu;
 
 public interface Menu {
 
-    void enter();
+    int enter();
 
+    String title();
 }

@@ -51,4 +51,8 @@ public class UserRepository {
     public void setLoginedUser(User loginedUser) {
         this.loginedUser = loginedUser;
     }
+
+    public boolean isLogin() {
+        return this.loginedUser != null;
+    }
 }

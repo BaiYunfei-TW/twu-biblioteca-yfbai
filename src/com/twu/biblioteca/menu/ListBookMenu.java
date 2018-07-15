@@ -5,7 +5,7 @@ import com.twu.biblioteca.repository.BookRepository;
 
 public class ListBookMenu implements Menu {
     @Override
-    public void enter() {
+    public int enter() {
         System.out.println("Book List:");
         System.out.println("----------------------------");
         for (Book book :
@@ -13,6 +13,12 @@ public class ListBookMenu implements Menu {
             System.out.println(book.toString());
         }
         System.out.println("----------------------------");
+        return 0;
+    }
+
+    @Override
+    public String title() {
+        return "List Books";
     }
 
 }

@@ -16,7 +16,7 @@ public class LoginMenu implements Menu {
     }
 
     @Override
-    public void enter() {
+    public int enter() {
         String account = null;
         String password = null;
         try {
@@ -28,8 +28,15 @@ public class LoginMenu implements Menu {
         User user = userSerivce.login(account, password);
         if (user == null) {
             System.out.println("Sorry. Your password or account is incorrect.");
-            return;
+            return 0;
         }
         System.out.println("Successfully login!");
+        System.out.println("----------------------------");
+        return 0;
+    }
+
+    @Override
+    public String title() {
+        return "Login";
     }
 }

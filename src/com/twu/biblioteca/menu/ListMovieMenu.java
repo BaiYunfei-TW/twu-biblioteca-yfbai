@@ -8,7 +8,7 @@ public class ListMovieMenu implements Menu {
     MovieRepository movieRepository = MovieRepository.instance();
 
     @Override
-    public void enter() {
+    public int enter() {
         System.out.println("Movie List:");
         System.out.println("----------------------------");
         for (Movie m :
@@ -16,5 +16,11 @@ public class ListMovieMenu implements Menu {
             System.out.println(m.toString());
         }
         System.out.println("----------------------------");
+        return 0;
+    }
+
+    @Override
+    public String title() {
+        return "List Movies";
     }
 }
