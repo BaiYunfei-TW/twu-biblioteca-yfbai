@@ -11,6 +11,9 @@ public class LoginMenu implements Menu {
     private InputCommand inputCommand;
     private UserSerivce userSerivce = new UserSerivce();
 
+    public static final int LOGIN_SUCCESS = 201;
+    public static final int LOGIN_FAILURE = 501;
+
     public LoginMenu(InputCommand inputCommand) {
         this.inputCommand = inputCommand;
     }
