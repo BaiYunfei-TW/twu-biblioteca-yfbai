@@ -5,12 +5,16 @@ import com.twu.biblioteca.entity.Book;
 import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.BookRepository;
 import com.twu.biblioteca.repository.UserRepository;
+import com.twu.biblioteca.serivce.ReturnService;
+import org.mockito.internal.stubbing.answers.Returns;
 
 import java.io.IOException;
 
 public class ReturnMenu implements Menu{
 
     private final InputCommand inputCommand;
+
+    private ReturnService returnService = new ReturnService();
 
     public ReturnMenu(InputCommand inputCommand) {
         this.inputCommand = inputCommand;
@@ -27,19 +31,23 @@ public class ReturnMenu implements Menu{
                 }
             }
 
-            String bookname = inputCommand.input("Please input the book's name:\r\n");
-            Book book = BookRepository.instance().queryByName(bookname);
-            if(book == null){
-                System.out.println("Sorry! \""+bookname+"\" is not our book!");
+            String name = inputCommand.input("Please input the book's name:\r\n");
+
+            int state = returnService.returnItem(name);
+            if(state == ReturnService.STATE_RETURN_FAILURE_NOT_EXIST){
+                System.out.println("Sorry! \""+name+"\" is not our book!");
                 System.out.println("----------------------------");
                 return 0;
             }
-            if (book.checkable()) {
-                System.out.println("Sorry! \""+bookname+"\" is already in our library!");
+            if (state == ReturnService.STATE_RETURN_FAILURE_ALREADY_RETURNED) {
+                System.out.println("Sorry! \""+name+"\" is already in our library!");
                 System.out.println("----------------------------");
                 return 0;
             }
-            book.returnToLibrary();
+            if (state == ReturnService.STATE_RETURN_FAILURE_NO_LOGIN) {
+                return enter();
+            }
+
             System.out.println("Successfully returnToLibrary!");
             System.out.println("----------------------------");
         } catch (IOException e) {

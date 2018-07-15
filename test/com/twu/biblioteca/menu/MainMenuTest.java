@@ -160,12 +160,13 @@ public class MainMenuTest extends BaseTest {
 
     @Test
     public void should_enter_Return_menu_and_return_the_book_named_Design_Patterns_when_given_3_and_Design_Pattern() throws IOException {
-        login();
+        loginByManager();
 
         String excepted =   "1. List Books\r\n" +
                 "2. List Movies\r\n" +
                 "3. Checkout\r\n" +
                 "4. Return\r\n" +
+                "5. Checkout Records\r\n" +
                 "7. My Information\r\n" +
                 "0. Quit\r\n" +
                 "----------------------------\r\n" +
@@ -175,6 +176,7 @@ public class MainMenuTest extends BaseTest {
                 "2. List Movies\r\n" +
                 "3. Checkout\r\n" +
                 "4. Return\r\n" +
+                "5. Checkout Records\r\n" +
                 "7. My Information\r\n" +
                 "0. Quit\r\n" +
                 "----------------------------\r\n" +

@@ -14,6 +14,7 @@ public class ReturnService {
     public static final int STATE_RETURN_FAILURE_NOT_EXIST = 503;
     public static final int STATE_RETURN_FAILURE_ALREADY_RETURNED = 502;
     public static final int STATE_RETURN_SUCCESS = 201;
+    public static final int STATE_RETURN_FAILURE_YOU_ARE_NOT_OWNER = 504;
 
     private BookRepository bookRepository = BookRepository.instance();
     private MovieRepository movieRepository = MovieRepository.instance();
@@ -36,8 +37,12 @@ public class ReturnService {
             return STATE_RETURN_FAILURE_ALREADY_RETURNED;
         }
         CheckoutRecord checkoutRecord = checkoutRecordRepository.queryByItemIdAndUserId(item.getId(), user.getId());
-        checkoutRecord.returnToLibrary();
 
+        if (checkoutRecord == null) {
+            return STATE_RETURN_FAILURE_YOU_ARE_NOT_OWNER;
+        }
+
+        checkoutRecord.returnToLibrary();
         item.returnToLibrary();
 
         return STATE_RETURN_SUCCESS;

@@ -11,6 +11,10 @@ public class BibliotecaApp {
 
     public void start() {
         InputCommand inputCommand = new InputCommand();
+        start(inputCommand);
+    }
+
+    public void start(InputCommand inputCommand) {
         new MainMenu(inputCommand).enter();
     }
 }
