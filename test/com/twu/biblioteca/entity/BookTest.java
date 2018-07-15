@@ -55,4 +55,20 @@ public class BookTest {
         assertEquals(excepted, book.checkable());
     }
 
+    @Test
+    public void should_return_book_type() {
+        String excepted = "Book";
+        Book book = new Book(1, "Head First Java", "Bert Bates, Kathy Sierra", 2005, Book.STATE_CHECKED_OUT);
+
+        assertEquals(excepted, book.type());
+    }
+
+    @Test
+    public void should_return_book_info() {
+        String excepted = "Head First Java.Bert Bates, Kathy Sierra.2005";
+        Book book = new Book(1, "Head First Java", "Bert Bates, Kathy Sierra", 2005, Book.STATE_CHECKED_OUT);
+
+        assertEquals(excepted, book.info());
+    }
+
 }

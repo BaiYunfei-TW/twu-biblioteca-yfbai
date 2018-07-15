@@ -1,6 +1,6 @@
 package com.twu.biblioteca.entity;
 
-public class Book {
+public class Book implements Checkable{
     public static final String STATE_IN_LIBRARY = "in_library";
     public static final String STATE_CHECKED_OUT = "checked_out";
     private String author;
@@ -55,5 +55,20 @@ public class Book {
 
     public void returned() {
         this.state = STATE_IN_LIBRARY;
+    }
+
+    @Override
+    public String info() {
+        return String.format(
+                "%s.%s.%d",
+                this.name,
+                this.author,
+                this.year
+        );
+    }
+
+    @Override
+    public String type() {
+        return "Book";
     }
 }

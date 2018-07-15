@@ -1,6 +1,6 @@
 package com.twu.biblioteca.entity;
 
-public class Movie {
+public class Movie implements Checkable {
 
     public static final String STATE_CHECKED_OUT = "checked_out";
     public static final String STATE_IN_LIBRARY = "in_library";
@@ -52,5 +52,15 @@ public class Movie {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String info() {
+        return String.format("%s.%s.%d", name, director, year);
+    }
+
+    @Override
+    public String type() {
+        return "Movie";
     }
 }
