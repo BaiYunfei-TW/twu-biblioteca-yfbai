@@ -5,15 +5,11 @@ import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.entity.Book;
 import com.twu.biblioteca.repository.BookRepository;
 import com.twu.biblioteca.repository.UserRepository;
-import com.twu.biblioteca.service.UserSerivce;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.longThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

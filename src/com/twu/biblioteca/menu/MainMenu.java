@@ -26,17 +26,13 @@ public class MainMenu implements Menu {
 
     private void updateMenus() {
         menuMap.clear();
-
         menuMap.put("1", new ListBookMenu());
         menuMap.put("2", new ListMovieMenu());
         menuMap.put("3", new CheckOutMenu(inputCommand));
         menuMap.put("4", new ReturnMenu(inputCommand));
-
-        if (UserRepository.instance().isLogin()) {
-            menuMap.put("7", new UserInfoMenu());
-        }else{
-            menuMap.put("9", new LoginMenu(inputCommand));
-        }
+        menuMap.put("5", new CheckoutRecordMenu());
+        menuMap.put("7", new UserInfoMenu());
+        menuMap.put("9", new LoginMenu(inputCommand));
 
         menuMap.put("0", new QuitMenu());
     }
@@ -46,7 +42,9 @@ public class MainMenu implements Menu {
         updateMenus();
 
         for (String key : menuMap.keySet()) {
-            System.out.printf("%s. %s\r\n", key, menuMap.get(key).title());
+            if (menuMap.get(key).auth(UserRepository.instance().getLoginedUser())) {
+               System.out.printf("%s. %s\r\n", key, menuMap.get(key).title());
+            }
         }
         System.out.println("----------------------------");
 
