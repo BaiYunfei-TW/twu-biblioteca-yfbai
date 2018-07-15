@@ -6,4 +6,7 @@ public interface Checkable {
 
     String type();
 
+    boolean checkable();
+
+    void checkout();
 }

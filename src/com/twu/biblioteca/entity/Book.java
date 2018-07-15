@@ -38,6 +38,7 @@ public class Book implements Checkable{
         return String.format("%d. %s | %s | %d", id, name, author, year);
     }
 
+    @Override
     public boolean checkable() {
         if (this.state.equals(STATE_IN_LIBRARY)) {
             return true;
@@ -45,6 +46,7 @@ public class Book implements Checkable{
         return false;
     }
 
+    @Override
     public void checkout() {
         this.state = STATE_CHECKED_OUT;
     }

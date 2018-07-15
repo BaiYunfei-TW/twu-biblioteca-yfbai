@@ -86,4 +86,8 @@ public class CheckoutRecord {
         }
         return id == ((CheckoutRecord) obj).id;
     }
+
+    public int getId() {
+        return id;
+    }
 }

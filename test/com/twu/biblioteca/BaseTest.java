@@ -2,6 +2,8 @@ package com.twu.biblioteca;
 
 import com.twu.biblioteca.commands.InputCommand;
 import com.twu.biblioteca.repository.BookRepository;
+import com.twu.biblioteca.repository.CheckoutRecordRepository;
+import com.twu.biblioteca.repository.MovieRepository;
 import com.twu.biblioteca.repository.UserRepository;
 import com.twu.biblioteca.service.UserSerivce;
 import org.junit.Before;
@@ -21,6 +23,8 @@ public class BaseTest {
 
         BookRepository.instance().init();
         UserRepository.instance().init();
+        MovieRepository.instance().init();
+        CheckoutRecordRepository.instance().init();
     }
 
     public String printedContent() {

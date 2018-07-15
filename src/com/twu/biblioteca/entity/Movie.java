@@ -25,10 +25,12 @@ public class Movie implements Checkable {
         this.state = state;
     }
 
+    @Override
     public boolean checkable() {
         return STATE_IN_LIBRARY.equals(this.state);
     }
 
+    @Override
     public void checkout() {
         this.state = STATE_CHECKED_OUT;
     }

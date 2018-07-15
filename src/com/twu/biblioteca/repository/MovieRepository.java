@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MovieRepository {
 
-    public static final MovieRepository movieRepository;
+    private static final MovieRepository movieRepository;
 
     private List<Movie> movieList;
 
